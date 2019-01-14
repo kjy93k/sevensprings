@@ -1,0 +1,60 @@
+@charset "utf-8";
+#container{/* background-color: #f5f2ec; */}
+.main-visual-wrap .bx-wrapper{border: none;box-shadow: none;background: none;margin-bottom: 0;}
+.main-visual-wrap .bx-wrapper img{ width: 100%; }/* h500 */
+.main-visual-wrap .bx-wrapper .bx-pager.bx-default-pager a{width: 55px;border-radius:3px;height:5px;margin: 0 10px;}
+.main-visual-wrap .bx-wrapper .bx-pager{padding-top: 0;bottom: 30px;text-align: center;}
+.main-visual-wrap .bx-wrapper .bx-controls.bx-has-controls-auto.bx-has-pager .bx-pager{width: 100%; text-align: center;}
+.main-visual-wrap .bx-wrapper .bx-pager.bx-default-pager a, .main-visual-wrap .bx-wrapper .bx-pager.bx-default-pager a:hover{background-color: #fff;transition:.4s;}
+.main-visual-wrap .bx-wrapper .bx-pager.bx-default-pager a.active, .main-visual-wrap .bx-wrapper .bx-pager.bx-default-pager a:focus{background-color: #d9442b;transition:.4s;}
+
+.content-wrap{width: 100%;padding-top: 70px;padding-bottom: 90px;overflow: hidden;}
+.content-1-wrap{ border: 10px double #fff;transition:.4s;}
+.content-1-wrap:hover{ border: 10px double #333;}
+/* .content-1-wrap{background-color: #f5f2ec;} */
+.content{max-width: 1200px;margin: 0 auto;}
+.content-txt{text-align: center;}
+.content h2{font-size: 40px;font-weight: bold;font-family: 'time new roman';margin-bottom: 45px;}
+.content h2:after{content: '';display: block;width: 23%;height: 3px;background-color: lightgray;position: absolute;left: 50%;transform:translateX(-50%);margin-top: 15px;}
+.content h2+p{margin-bottom: 70px;font-size: 15px;color: #666;}
+.content ul{width: 100%;}
+.content-1 ul li{float: left;margin-right: 15%;font-size: 15px; background: url(../images/main/salad.png) no-repeat;-webkit-background-size: 100%;border-radius:50%;overflow: hidden;background-size: 100%;position: relative;transition:1s;}
+.content-1 ul li:nth-child(2){background: url(../images/main/risotto.png) no-repeat;-webkit-background-size: 100%;background-size: 100%;}
+.content-1 ul li:nth-child(3){margin-right: 0;background: url(../images/main/sushi.png) no-repeat;-webkit-background-size: 100%;background-size: 100%;}
+.content-1 ul li .brand-inner-wr{opacity: 0;} /* 자바스크립트넣으면 빼기 */
+.content-1 ul li:hover .brand-inner-wr{opacity: 1;}
+.content-1 ul li img{position: absolute;top: 34%;left: 39%;}
+.content-1 ul li a{color: #fff;text-shadow: 1px 1px 1px #292929;text-align: center; display: block;width: 280px;height: 280px;padding-top: 185px;transition:.3s ease;}
+.content-1 ul li a:hover{background: rgba(0,0,0,.5);}
+
+.content-2-wrap{transition:.6s linear; /* border: 10px double #fff; *//* border: 10px double #333; */padding-bottom: 180px;background: url(../images/main/bg3.png) center no-repeat;color: #fff;background-size: cover;position: relative;}
+.content-2-wrap:hover{/*background-size: 18.5%;*/background: url(../images/main/bg4.png) center no-repeat;background-size: cover;} /*스크롤 값으로 할지 고민중*/
+.content-2-wrap:before{content: '';display: block;width: 100%;height: 100%;background-color: rgba(0,0,0,.4);position: absolute;top: 0;} /*스크롤 값으로 할지 고민중*/
+.content-2{position: relative;}
+.content-2 h2+p{color: #fff;}
+.content-2 ul{padding-bottom: 9px;}
+.content-2 ul *{transition: all .7s linear;}
+.content-2 ul li{overflow: hidden;float: left;width: 240px;margin-right: 6.5%;height: 195px;background: url(../images/main/content-2-menu1.png) center no-repeat;position: relative;font-size: 1.5em;border-style: ridge;}
+.content-2 ul li:hover:before{content: '';display: block;width: 100%;height: 100%;background-color: rgba(0,0,0,.5);}
+.content-2 ul li:nth-child(2){background: url(../images/main/content-2-menu2.png) center no-repeat;}
+.content-2 ul li:nth-child(3){background: url(../images/main/content-2-menu3.png) center no-repeat;}
+.content-2 ul li:last-child{margin-right: 0;background: url(../images/main/content-2-menu4.png) center no-repeat;}
+.content-2 .content-2-inner{width: 100%;height: 100%;}
+.content-2 .content-2-txt-wrap1{/* height: 50%; */overflow: hidden;text-shadow: 1px 1px 1px #292929;}
+.content-2 .content-2-txt-wrap1>h3{position: absolute;width: 100%;text-align: center;top: 20%;z-index: 1;}
+.content-2 .content-2-txt-wrap1>h3:last-child{opacity: 0; transform: translateY(70%);}
+.content-2 li:hover .content-2-txt-wrap1>h3:first-child{opacity: 0; transform: translateY(70%);}
+.content-2 li:hover .content-2-txt-wrap1>h3:last-child{opacity: 1; transform: translateY(0%);}
+.content-2-txt-wrap2{font-size: 14px;position: absolute;top: 77%;z-index: 2;width: 100%;text-align: center;}
+.content-2-txt-wrap2.on{top: 3%;}
+.content-2-txt-wrap2 .ct2Btn{display: block;width: 39px;height: 35px;border: none;background: rgba(255,255,255,.7) url(../images/arrow-up-1.png) bottom no-repeat;background-size: 80%;text-indent: -9999px;margin: 0 auto;border-radius:15px 15px 0 0;padding-bottom: 10px;}
+.content-2-txt-wrap2 .ct2Btn.on{background: rgba(255,255,255,.7) url(../images/arrow-down-1.png) bottom no-repeat;background-size: 80%;} 
+.content-2-inner .ct2Btn~p{background: rgba(255,255,255,.8);color: #000;text-shadow: 1px 1px 1px #999;padding-bottom: 10px;}
+.content-2-inner .ct2Btn+p{padding-top: 35px;}
+.content-2-inner .content-2-txt-wrap2 p:last-child > a{display: block;margin: 0 auto;width: 65px;height: 36px;line-height: 36px;color: #d9442b;font-weight: bold;font-size: 14px;}
+
+.content-3 ul li{float: left;width: 30%;height: 300px;margin-right: 5%;border: 2px dotted #aaa;}
+.content-3 ul li:last-child{margin-right: 0;}
+.content-3 ul li a{display: block;width: 100%;height: 100%;padding: 40px;}
+.content-3 ul li h3{font-size: 1.6em;margin-bottom: 40px;font-weight: bold;}
+.content-3 ul li h3+p{font-size: 1.8em;line-height: 2em;}

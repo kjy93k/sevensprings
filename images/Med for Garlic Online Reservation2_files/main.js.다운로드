@@ -1,0 +1,180 @@
+$(function(){
+	var recState = true;
+	var recHeight = $("#price").height();
+	var menuEa = 1;
+
+	pagers();
+	calcMenu();
+	//onEffect();
+
+	$("#addBtn").click(function(){
+		var menuTitle = $(".section.pages.active").find(".slide.active article>div>p:nth-of-type(1)").text();
+		var menuPrice = $(".section.pages.active").find(".slide.active article>div>p:nth-of-type(3)").text();
+		var menuPriceNum = parseInt(menuPrice.replace(",", ""));
+
+		var recList = $(".recAmount>ul>li>p:nth-of-type(1)");
+		var recListLen = $(".recAmount>ul>li>p:nth-of-type(1)").length;
+		//console.log(recListLen);
+		var recEa = $(".recAmount>ul>li>p:nth-of-type(2)");
+
+		$("#exMark").css("display","block");
+
+		for(var i=0; i<recListLen; i++){
+			var recListval = recList.eq(i).text();
+			//console.log(recListval);
+			if(recListval == menuTitle){
+				menuEa = parseInt(recEa.eq(i).text()) + 1;
+				console.log(menuEa);
+
+				var menuPriceTotal = String(menuEa*menuPriceNum);
+				menuPriceTotal = menuPriceTotal.replace(menuPriceTotal.substr(menuPriceTotal.length-4,4),menuPriceTotal.substr(menuPriceTotal.length-4,1)+","+menuPriceTotal.substr(menuPriceTotal.length-3,3));
+										
+				$(".recAmount>ul>li").eq(i).html("<div class='removeMenu'><div></div></div><p>"+menuTitle+"</p><p>"+menuEa+"</p><p>"+menuPriceTotal+"</p>");
+				calcMenu();
+				return false;
+			}
+		}
+		menuEa = 1;
+		var menuPriceTotal = String(menuEa*menuPriceNum);
+		menuPriceTotal = menuPriceTotal.replace(menuPriceTotal.substr(menuPriceTotal.length-4,4),menuPriceTotal.substr(menuPriceTotal.length-4,1)+","+menuPriceTotal.substr(menuPriceTotal.length-3,3));
+		$(".recAmount>ul").append("<li><div class='removeMenu'><div></div></div><p>"+menuTitle+"</p><p>"+menuEa+"</p><p>"+menuPriceTotal+"</p></li>");
+		calcMenu();
+	});
+
+	$("#fullpage").fullpage({
+		anchors:["intro","bread","starter","pasta","pizza","rice_riso","steak"],
+		menu:"#menus",
+		'afterLoad':function(anchorsLink,index){
+			console.log(index);
+			if(index >= 2){
+			 	$("header").addClass("on");
+			 	$("#price").stop().animate({top: recHeight - 60},500,"easeInOutCubic");
+			 	if(recState == false){$(".recHead").trigger("click")};
+			 	$("#addBtn").removeClass("off");
+			}else{
+			 	$("header").removeClass("on");
+			 	if(recState == false){$(".recHead").trigger("click")};
+			 	$("#price").stop().animate({top:"100%"},500,"easeInOutCubic");
+			 	$("#addBtn").addClass("off");
+			}
+		}
+	});
+
+	// $(window).scroll(function(){
+	// 	//var winScroll = pageYOffset;
+	// 	console.log("fuck");
+	// });
+
+	$(window).resize(function(){
+		recHeight = $("#price").height();
+		if(recState == false){
+			$("#price").css("top","10%");
+		}else{
+			$("#price").css("top","100%");
+		}
+	});
+
+	$("#menus>li").click(function(){
+		$("#menus>li").removeClass("active");
+		$(this).addClass("active");
+	});
+
+	$(".modalBg").click(function(){
+		$(".recHead>div").removeClass("on");
+		$("#price").stop().animate({top: recHeight - 60},900,"easeInOutCubic");
+		$(".modalBg").stop().animate({opacity:0},900,"easeInOutCubic",function(){
+			$(".modalBg").css("display","none");
+		});
+		recState = true;
+	});
+
+	$(".recHead").click(function(){
+		$("#exMark").css("display","none");
+
+		if(recState == true){
+			$(".recHead>div").addClass("on");
+			$("#price").stop().animate({top:"15%"},900,"easeInOutCubic",400);
+			$(".modalBg").css("display","block");
+			$(".modalBg").stop().animate({opacity:1},900,"easeInOutCubic");
+			preDate();
+			recState = false;
+		}else if(recState == false){
+			$(".recHead>div").removeClass("on");
+			$("#price").stop().animate({top: recHeight - 60},900,"easeInOutCubic");
+			$(".modalBg").stop().animate({opacity:0},900,"easeInOutCubic",function(){
+				$(".modalBg").css("display","none");
+			});
+			recState = true;
+		}
+	});
+
+	$(document).on("click",'.removeMenu',function(){
+		console.log($(this).parent());
+		$(this).parent().remove();
+		calcMenu();
+		
+	});
+
+	$(".fp-controlArrow.fp-prev").click(function(){
+		var x = $(".section.pages.active").find(".active").find("article>div");
+		console.log(x);
+	});
+
+	function onEffect(){
+		if($(".slide.active") == true){
+			$(this).find("article").addClass("on")
+		}
+	}
+
+	function pagers(){
+		for(var i=1; i<7; i++){
+			var idVal = "page"+i;
+			var pagerLen = $("div[id = idVal]").find(".fp-slidesContainer>div").length;					
+		}
+	}
+
+	function preDate(){
+		var date = new Date();
+		var getYear = date.getFullYear();
+		var getMonth = parseInt(date.getMonth())+1;
+		var getDate = date.getDate();
+		var getHours = date.getHours();
+		var getMinutes = date.getMinutes();
+
+		if(getMonth < 10) getmonth = "0"+getMonth;
+		if(getDate < 10) getDate = "0"+getDate;
+		if(getHours < 10) getHours = "0"+getHours;
+		if(getMinutes < 10) getMinutes = "0"+getMinutes;
+		
+		$("#preDate").html(getYear+"-"+getMonth+"-"+getDate+" "+getHours+":"+getMinutes);
+	}
+
+	function calcMenu(){
+		var recTotal = $(".recAmount li>p:nth-of-type(3)");
+		var recTotalPrice = 0;
+
+		for(var i=0; i<recTotal.length; i++){
+			var recPrice = parseInt(recTotal.eq(i).text().replace(",",""));
+			recTotalPrice += recPrice;
+		}
+		var recTotalText = String(recTotalPrice);
+		var dot3Ori = recTotalText.substr(recTotalText.length - 4,4);
+		var dot3Cha = recTotalText.substr(recTotalText.length - 4,1)+","+recTotalText.substr(recTotalText.length - 3,3);
+		var recTotalPrice = recTotalText.replace(dot3Ori,dot3Cha);
+	
+		$("#recTotalPrice").text(recTotalPrice);
+		//console.log(recTotalPrice);
+	}
+	// function textMove(){
+	// 	$(".section.pages.fp-section.fp-completely.active>div>div").find(".active>div>article>div").css({opacity:0});
+	// }
+
+	// $(".fp-controlArrow").click(function(){
+	// 	textMove();
+	// 	console.log("click");
+	// });
+	// $(window).scroll(function(){
+	// 	textMove();
+	// 	console.log("scroll");
+	// });
+})

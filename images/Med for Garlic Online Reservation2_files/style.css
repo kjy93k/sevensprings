@@ -1,0 +1,176 @@
+@charset "UTF-8";
+
+body{background:#f5f5f5; font-family: 'Roboto', sans-serif;} /*기본 헤더확인 배경색*/
+img{width:100%; display:block;}
+header{position:fixed; width:100%; height:0px; top:0; left:0; background:rgba(255,255,255,0.8); z-index:100; transition:0.3s;}
+header.on{height:50px;}
+header>h1{position:absolute; top:18px; left:12%; opacity:0; transition:0.8s;}
+header.on>h1{opacity:1;}
+header>h1>a{display:block; width:120px;}
+
+/*------헤더 메뉴-----*/
+header>ul{width:602px; margin:0 auto;}
+header>ul:after{content:""; display:block; clear:both;}
+header>ul>li{float:left; opacity:0;}
+header.on>ul>li{opacity:1;}
+header>ul>li+li{margin-left:40px;}
+header>ul>li>a{display:block; position:relative; line-height:50px; text-align:center; text-transform:uppercase; font-size:13px; color:#bbb !important; letter-spacing:2px; font-weight: bold}
+header>ul>li>a:before,
+header>ul>li>a:after{content:""; display:block; position:absolute; left:0;}
+
+/*-----오버 이미지-----*/
+header>ul>li:hover>a{color:#333 !important;}
+header>ul>li:hover>a:before{width:100%; height:3px; top:48px; background:#ea4335;}
+header>ul>li:hover>a:after{border-width: 6px 6px 0 6px; width:0; border-style:solid; border-color:#ea4335 transparent transparent transparent; left:50%; margin-left:-6px;}
+header>ul>li.active>a{color:#333 !important;}
+header>ul>li.active>a:before{width:100%; height:3px; top:48px; background:#ea4335;}
+header>ul>li.active>a:after{border-width: 6px 6px 0 6px; width:0; border-style:solid; border-color:#ea4335 transparent transparent transparent; left:50%; margin-left:-6px;}
+
+/*----controller setting-----*/
+.fp-controlArrow.fp-prev,
+.fp-controlArrow.fp-next{width:30px; height:76px; border:none;}
+.fp-controlArrow.fp-prev{background:url(../images/prev_btn.png) no-repeat center; left:20px;}
+.fp-controlArrow.fp-next{background:url(../images/next_btn.png) no-repeat center; right:20px;}
+
+aside#pagers{position:absolute; width:100%; top:80px; z-index:100;}
+aside#pagers>ul{margin:0 auto;}
+aside#pagers>ul:after{content:""; display:block; clear:both;}
+aside#pagers>ul>li{float:left; width:40px; height:5px; background:rgba(0,0,0,0.5);}
+aside#pagers>ul>li+li{margin-left:10px;}
+
+section#intro{width:100%; height:100%; background:#fff;}
+
+section#fullpage{_display:none; width:100%; height:100%;}
+
+/*----main intro setting-----*/
+	#page0{background:#000;}
+		#page0 h1{width:300px; margin:0 auto;}
+		#page0 p{font-size:18px; color:#fff; width:210px; margin:15px auto; text-transform:uppercase; font-weight:200;}
+		#page0 ul{width:1064px; height:508px; margin:50px auto 0 auto; box-sizing:border-box;}
+		#page0 ul:after{content:""; display:block; clear:both;}
+		#page0 ul>li{float:left; position:relative; margin-left:8px; box-sizing:border-box; text-align:center; text-transform:uppercase; transition:0.3s}
+		#page0 ul>li:hover:before{opacity:1;}
+		#page0 ul>li:before{content:""; display:block; width:100%; height:100%; opacity:0; background:rgba(0,0,0,0.8); transition: 0.5s;}
+		#page0 ul>li:nth-child(1){width:260px; height:510px; background:url(../images/bread_btn.jpg) no-repeat center; margin:0;}
+		#page0 ul>li:nth-child(2){width:260px; height:250px; background:url(../images/starter_btn.jpg) no-repeat center;}
+		#page0 ul>li:nth-child(3){width:260px; height:250px; background:url(../images/pasta_btn.jpg) no-repeat center;}
+		#page0 ul>li:nth-child(4){width:260px; height:250px; background:url(../images/pizza_btn.jpg) no-repeat center;}
+		#page0 ul>li:nth-child(5){width:260px; height:250px; background:url(../images/rice_risotto_btn.jpg) no-repeat center; margin-top:8px;}
+		#page0 ul>li:nth-child(6){width:528px; height:250px; background:url(../images/steak_btn.jpg) no-repeat center; margin-top:8px;}
+		
+		#page0 ul>li>a{display:block; position:absolute; width:100%; top:40%; left:0; line-height:inherit; font-size:20px; color:#fff; opacity:0; transition:0.5s;}
+		#page0 ul>li:nth-child(1)>a{top:45%;}
+		#page0 ul>li:hover>a{top:30%; opacity:1;}
+		#page0 ul>li:nth-child(1):hover>a{top:40%; opacity:1;}
+		#page0 ul>li>a>img{display:block; width:65px; margin:0 auto; margin-bottom:5px;}
+		#page0 ul>li:nth-child(5)>a>img{margin-bottom:-5px;}
+	
+	.pages article{position:relative; width:100%; height:100%; background-repeat:no-repeat; background-position:center top; background-size:cover;}
+	.pages article>div{position:absolute; width:440px; font-weight:bold; color:#fff; z-index:100; bottom:5%; left:5%; opacity:0;transition:0.5s;}
+	.pages.active .slide.active article>div{bottom:8%; opacity:1;}
+	.pages article>div>i:nth-of-type(1),
+	.pages article>div>i:nth-of-type(2){display:inline-block; position:absolute; top:-30px; font-size:30px; color:#e12828;}
+	.pages article>div>i:nth-of-type(2){left:25px;}
+
+	.pages article>div>p:nth-of-type(1){font-size:40px; letter-spacing:3px; line-height:40px; text-shadow: 1px 1px 4px #333;}
+	.pages article>div>p:nth-of-type(2){font-size:16px; margin-top:15px; letter-spacing:1px; line-height:22px; text-shadow: 1px 1px 6px #333;}
+	.pages article>div>p:nth-of-type(3){font-size:36px; margin-top:5px; letter-spacing:2px; text-shadow: 1px 1px 4px #333;}
+
+		article.menu01_1{background-image:url(../images/bread01.png);}
+		article.menu01_2{background-image:url(../images/bread02.jpg);}
+		article.menu01_3{background-image:url(../images/bread03.jpg);}
+						
+		article.menu02_1{background-image:url(../images/starter01.jpg);}
+		article.menu02_2{background-image:url(../images/starter02.jpg);}
+		article.menu02_3{background-image:url(../images/starter03.jpg);}
+		article.menu02_4{background-image:url(../images/starter04.jpg);}
+		article.menu02_5{background-image:url(../images/starter05.jpg);}
+		article.menu02_6{background-image:url(../images/starter06.jpg);}
+		article.menu02_7{background-image:url(../images/starter07.jpg);}
+		
+		article.menu03_1{background-image:url(../images/pasta01.jpg);}
+		article.menu03_2{background-image:url(../images/pasta02.jpg);}
+		article.menu03_3{background-image:url(../images/pasta03.jpg);}
+		article.menu03_4{background-image:url(../images/pasta04.jpg);}
+		article.menu03_5{background-image:url(../images/pasta05.jpg);}
+		article.menu03_6{background-image:url(../images/pasta06.jpg);}
+		article.menu03_7{background-image:url(../images/pasta07.jpg);}
+		article.menu03_8{background-image:url(../images/pasta08.jpg);}
+		article.menu03_9{background-image:url(../images/pasta09.jpg);}
+		
+		article.menu04_1{background-image:url(../images/pizza01.jpg);}
+		article.menu04_2{background-image:url(../images/pizza02.jpg);}
+		article.menu04_3{background-image:url(../images/pizza03.jpg);}
+		article.menu04_4{background-image:url(../images/pizza04.jpg);}
+	
+		article.menu05_1{background-image:url(../images/rice_risotto01.jpg);}
+		article.menu05_2{background-image:url(../images/rice_risotto02.jpg);}
+		article.menu05_3{background-image:url(../images/rice_risotto03.jpg);}
+		article.menu05_4{background-image:url(../images/rice_risotto04.jpg);}
+		
+		article.menu06_1{background-image:url(../images/steak01.jpg);}
+		article.menu06_2{background-image:url(../images/steak02.jpg);}
+		article.menu06_3{background-image:url(../images/steak03.jpg);}
+		article.menu06_4{background-image:url(../images/steak04.jpg);}
+		article.menu06_5{background-image:url(../images/steak05.jpg);}
+		article.menu06_6{background-image:url(../images/steak06.jpg);}
+		
+.modalBg{display:none; position:absolute; width:100vw; height:calc(100% - 50px); left:0; bottom:0; background:rgba(0,0,0,0.6); z-index:50; opacity:0; cursor:pointer;}
+
+footer#price{position:absolute; width:500px; height:100%; left:50%; margin-left:-250px; top:100%; border-radius:20px; box-shadow:3px 1px 15px -2px rgba(0,0,0,1); background:#f5f5f5; z-index:100;}
+	.recHead{height:60px; border-bottom:1.3px solid #ddd; color:#333; cursor:pointer;}
+	.recHead:after{content:""; display:block; clear:both;}
+	.recHead>p{float:left; line-height:50px; margin:10px 0 0 30px; font-weight:bold;}
+		#exMark{display:none; position:absolute; font-size:20px; left:15px; top:22px; color:#ea4335; padding-right:10px; animation:exMark 2s infinite; }
+	@keyframes exMark{
+		0%{opacity:0;}
+		50%{opacity:1;}
+		100%{opacity:0;}
+	}
+
+	.recHead>div{float:right; position:relative; height:35px; width:2px; top:15px; right:40px; background:#333; transition:transform 0.5s 0.8s;}
+	.recHead>div:before{content:""; display:block; position:absolute; width:100%; height:100%; background:#333; transform-origin:50% 50%; transform:rotate(-90deg);}
+	.recHead>div.on{transform:rotate(-135deg);}
+	h2.recLogo{width:250px; margin:80px auto 70px auto;}
+
+	.recInfo{width:420px; margin:0 auto; font-size:14px; padding-bottom:10px; border-bottom:1px dashed #999;}
+	.recInfo:after{content:""; display:block; clear:both;}
+	.recInfo>div:nth-child(1){float:left;}
+	.recInfo>div:nth-child(2){float:right; text-align:right;}
+
+	.recAmount{width:420px; margin:0 auto; font-size:15px; padding:15px 0; border-bottom:1px dashed #999;}
+	.recAmount>ul>li:after{content:""; display:block; clear:both;}
+	.recAmount>ul>li>p{float:left; line-height:25px;}
+	.recAmount>ul>li>div{float:left; line-height:25px; width:20px; height:25px; cursor:pointer;}
+	.recAmount>ul>li>div>div{position:relative; width:15px; height:1px; background:#333; transform:rotate(45deg); margin-top:14px;}
+	.recAmount>ul>li>div:hover>div{background:brown;}
+	.recAmount>ul>li>div>div:before{content:""; position:absolute; width:100%; height:100%; background:inherit; transform-origin:50% 50%; transform:rotate(-90deg);}
+	.recAmount>ul>li>p:nth-of-type(1){width:270px;}
+	.recAmount>ul>li>p:nth-of-type(2){width:75px;}
+	.recAmount>ul>li>p:nth-of-type(3){width:50px; text-align:right;}
+
+	.recTotal{width:420px; margin:0 auto; margin-top:30px;}
+	.recTotal:after{content:""; display:block; clear:both;}
+	.recTotal>p{float:left; font-weight:bold; font-size:20px;}
+	.recTotal>p:nth-of-type(1){width:120px; line-height:20px;}
+	.recTotal>p:nth-of-type(1)>span{width:120px; font-weight:400; font-size:13px;}
+	.recTotal>p:nth-of-type(2){width:300px; text-align:right;}
+
+	.recFooter{position:absolute; width:420px; left:40px; bottom:20%;}
+	.recFooter:after{content:""; display:block; clear:both;}
+	.recFooter>ul{float:left; margin-top:20px;}
+	.recFooter>ul:after{content:""; display:block; clear:both;}
+	.recFooter>ul>li{float:left; width:30px; height:30px;}
+	.recFooter>ul>li+li{margin-left:10px;}
+	.recFooter>button:nth-of-type(1){float:right; width:120px; height:50px; border:1px solid #999; background:#fff;}
+	.recFooter>button:nth-of-type(2){float:right; width:50px; height:50px; border:1px solid #999; background:#fff; margin-right:10px;}
+
+	#addBtn{position:fixed; right:15%; bottom:5%; width:100px; height:100px; padding-top:25px; animation:active 1.5s linear infinite; transform-origin:50% 50%; background:#ea4335; z-index:30; border-radius:50%; box-sizing:border-box; cursor:pointer;  transition:0.5s; transition-delay: 0.2s}
+	 @keyframes active{
+	 	0%{box-shadow:0 0 0 0 rgba(255,107,93,1);}
+	 	50%{box-shadow:0 0 0 6px rgba(255,107,93,1);}
+	 	100%{box-shadow:0 0 0 0 rgba(255,107,93,1);}
+	 }
+	#addBtn.off{transform:scale(0)}
+	#addBtn>p{transition:0.3s; opacity:1; transition-delay: 0.4s; color:#fff; font-weight:bold; text-align:center;}
+	#addBtn.off>p{opacity:0; transition-delay: 0s}
