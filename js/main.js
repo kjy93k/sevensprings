@@ -12,11 +12,11 @@ $(document).ready(function(){
 		$('.gnb>ul ul').show();
 		$(this).removeClass('on');
 		$(this).addClass('on');
-		$('#header .gnb-down').fadeIn(300)
+		$('#header .gnb-down').stop().fadeIn(300)
 	}, function(){
 		$('.gnb>ul ul').hide();
 		$(this).removeClass('on');
-		$('#header .gnb-down').fadeOut(350)
+		$('#header .gnb-down').stop().fadeOut(350)
 	});
 		/*
 	$('.gnb ul>li a').focus(function(){

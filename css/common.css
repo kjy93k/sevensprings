@@ -6,7 +6,7 @@ body{font: 13px 'Nanum Gothic','Roboto',sans-serif;}
 .skipmenu a:focus{top: 0;}
 
 .header-bg-wrap{background-color:  #333;height: 77px;}
-.w1100{max-width: 1200px;margin: 0 auto;position: relative;}
+.w1100{max-width: 1100px;margin: 0 auto;position: relative;}
 .top-banner{position: relative;background-image: url(../images/main/top-banner-left.png),url(../images/main/top-banner-right.png);background-position: left,right;background-repeat: no-repeat;}
 .top-banner a{width: 100%;height: 77px;display: block;}
 .top-banner p{position: absolute;left:200px;top: 28px;font-style: oblique;color: #fff;}
@@ -22,16 +22,17 @@ body{font: 13px 'Nanum Gothic','Roboto',sans-serif;}
 /* .gnb:after{content: "";display: block;clear: both;} */
 .gnb > ul{position: absolute; width: 73%;right: 0; height: 88px;overflow: hidden;transition:.3s;z-index: 2;}
 .gnb > ul.on{height: 305px;overflow: visible;}
-.gnb > ul > li{float: left; width: 20%;padding-top: 33px;font-size: 22px;color: #085320;text-align: center;}
+.gnb > ul > li{float: left; width: 20%;padding-top: 33px;font-size: 18px;color: #085320;text-align: center;}
 .gnb > ul > li > a{text-align: right;font-weight: bold;transition:.3s;}
 .gnb > ul > li  a:hover{color: #d9442b;font-weight: bold;}
 .gnb > ul > li:last-child{margin-right: 0;}
-.gnb > ul > li > ul{font-size: 15px;padding-top: 55px;}
-.gnb > ul > li > ul > li{margin-bottom: 30px;text-align:left;padding-left: 27%;}
-.gnb > ul > li:nth-child(4) > ul > li{padding-left: 34%;}
+.gnb > ul > li > ul{font-size: 13px;padding-top: 55px;}
+.gnb > ul > li > ul > li{margin-bottom: 30px;/* text-align:left; *//* padding-left: 23%; */}
+/* .gnb > ul > li:nth-child(4) > ul > li{padding-left: 34%;} */
 .gnb-down{position: absolute; z-index: 1;top: 165px;width: 100%;height: 216px;background-color: #fff;}
 
 #footer{height: 160px;background-color: #aaa;color: #f5f2ec;padding-top: 30px;}
+#footer:after{content: '';display: block;clear: both;}
 #footer .footer-fl{float: left;}
 #footer h3{height: 100px;line-height: 100px;font-size: 30px;font-style: italic;font-family: 'time new roman';float: left;margin-right: 40px;}
 #footer ul{overflow: hidden;}
