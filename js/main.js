@@ -5,12 +5,7 @@ $(document).ready(function(){
 	var $next= $('.right.png');
 
 	$('.gnb>ul ul').hide();
-	$('.main-visual').bxSlider({
-		auto: true,
-		autoControls: true,
-		stopAutoOnClick: true,
-		pager: true,
-	});
+
 	$('#header .gnb-down').fadeOut();
 	
 	$('.gnb>ul').hover(function(){
@@ -23,26 +18,7 @@ $(document).ready(function(){
 		$(this).removeClass('on');
 		$('#header .gnb-down').stop().fadeOut(350)
 	});
-		/*
-	$('.gnb ul>li a').focus(function(){
-		$('.gnb>ul').removeClass('on');
-		$('.gnb>ul').addClass('on');
-		$('#header .gnb-down').fadeIn(300)
-	}, function(){
-		$('.gnb>ul').removeClass('on');
-		$('#header .gnb-down').fadeOut(350)
-	});
-		*/
-	/*
-	$('.content-1>ul>li').hover(function(){
-		var $teq = $(this).index();
-		var $burl = 'url(images/main/c1-'+eval($teq+1)+'h.png)';
-		var $bburl = 'url(images/main/c1-'+eval($teq+1)+'.png)';
-		$(this).css('background',$burl);
-	},function(){
-		$(this).css('background',$bburl);
-	});
-	*/
+
 	$('.ct2Btn').click(function(){
 		var $i =$(this).parent();
 		var $ii = $(this).parent().parent().children('.content-2-txt-wrap1');

@@ -22,7 +22,7 @@ body{font: 13px 'Nanum Gothic','Roboto',sans-serif;}
 /* .gnb:after{content: "";display: block;clear: both;} */
 .gnb > ul{position: absolute; width: 73%;right: 0; height: 88px;overflow: hidden;transition:.3s;z-index: 2;}
 .gnb > ul.on{height: 305px;overflow: visible;}
-.gnb > ul > li{float: left; width: 20%;padding-top: 33px;font-size: 18px;color: #085320;text-align: center;}
+.gnb > ul > li{float: left; width: 20%;padding-top: 33px;font-size: 18px;/*color: #085320;*/text-align: center;}
 .gnb > ul > li > a{text-align: right;font-weight: bold;transition:.3s;}
 .gnb > ul > li  a:hover{color: #d9442b;font-weight: bold;}
 .gnb > ul > li:last-child{margin-right: 0;}
