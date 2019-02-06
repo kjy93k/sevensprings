@@ -1,12 +1,9 @@
 @charset "utf-8";
 .gnb-down{top: 87px;}
-.brand-wrap{width: 100%;height: 400px;background:url(../images/main/seven_menu1.jpg) center top fixed no-repeat;margin-bottom: 80px;}
+.brand-wrap{width: 100%;height: 400px;background:url(../images/main/seven_menu1.jpg) center top fixed no-repeat;}
 .brand-wrap h2{width: 100%;height: 100%;text-align: center;font-size: 35px;color: #fff;line-height: 400px;background: rgba(0,0,0,.3);text-shadow: 1px 1px 1px #555;}
+.container-wrap{background: url(../images/main/seven_menu1_bg.jpg) center;padding-top: 160px;padding-bottom: 160px;}
 #container{width: 1265px;margin: 0 auto;}
-.button-wrap{width: 220px;position: fixed;left: 2%;top: 20%;}
-.button-wrap h2{text-align: center;font-size: 1.2em;line-height: 2.4em;margin-bottom: 10px;background: #085320; color: #fff;box-shadow: 1px 1px 1px #085320;}
-.button-wrap h2 span:after{content: '';display: block;position: absolute;top: 7%;right: 28%;border-top: 9px solid #fff;border-left: 6px solid transparent;border-right: 6px solid transparent;border-bottom: solid none;}
-.button-wrap button{width: 100%;height: 40px;background: rgba(255,255,255,.7);border: none;	border-bottom: 1px solid #aaa;transition: .4s;}
-.button-wrap button:hover{background: #d9442b;color: #fff;}
+
 .brand-inner{display: none;}
-.brand-inner.selected{display: block;margin-bottom: 80px;}
+.brand-inner.selected{display: block;}

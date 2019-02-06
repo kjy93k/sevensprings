@@ -8,22 +8,11 @@
 	<meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
 	<link href="https://fonts.googleapis.com/css?family=Nanum+Gothic|Roboto" rel="stylesheet">
-	<link rel="stylesheet" href="../css/jquery.bxslider.css">
 	<link rel="stylesheet" href="css/common.css">
 	<title>SEVEN SPRINGS</title>
-	<link rel="stylesheet" href="css/main.css">
-	<script src="../js/jquery-3.3.1.min.js"></script>
-	<script src="../js/jquery.bxslider.js"></script>
-	<script>
-	$(document).ready(function(){
-		$('.main-visual').bxSlider({
-			auto: true,
-			autoControls: true,
-			stopAutoOnClick: true,
-			pager: true,
-		});
-	});
-	</script>
+	<link rel="stylesheet" href="css/benefit.css">
+	<script src="js/jquery-3.3.1.min.js"></script>
+	<script src="js/main.js"></script>
  </head>
  <body>
  <div class="skipmenu"><a href="container">본문 바로가기</a></div>
@@ -37,35 +26,35 @@
 						<ul>
 							<li><a href="brand.html">Brand</a>
 								<ul>
-									<li><a href="javascript:void(0)">Brand Story</a></li>
-									<li><a href="javascript:void(0)">매장정보</a></li>
+									<li><a href="brand.html">Brand Story</a></li>
+									<li><a href="brand.html">매장정보</a></li>
 								</ul>
 							</li>
 							<li><a href="menu.html">Menu</a>
 								<ul>
-									<li><a href="javascript:void(0)">세븐스프링스</a></li>
-									<li><a href="javascript:void(0)">세븐스프링스 블랙</a></li>
-									<li><a href="javascript:void(0)">카페 세븐스프링스</a></li>
-									<li><a href="javascript:void(0)">카페 파크7</a></li>
+									<li><a href="menu.html#menuli-1">세븐스프링스</a></li>
+									<li><a href="menu.html#menuli-2">세븐스프링스 블랙</a></li>
+									<li><a href="menu.html#menuli-3">카페 세븐스프링스</a></li>
+									<li><a href="menu.html#menuli-4">카페 파크7</a></li>
 								</ul>
 							</li>
 							<li><a href="benefit.html">Benefit</a>
 								<ul>
-									<li><a href="javascript:void(0)">Membership 혜택</a></li>
-									<li><a href="javascript:void(0)">제휴 할인 & 상품권</a></li>
+									<li><a href="benefit.html">Membership 혜택</a></li>
+									<li><a href="benefit.html">제휴 할인 & 상품권</a></li>
 								</ul>
 							</li>
 							<li><a href="event.html">Event</a>
 								<ul>
-									<li><a href="javascript:void(0)">News</a></li>
-									<li><a href="javascript:void(0)">Event</a></li>
-									<li><a href="javascript:void(0)">Social Live</a></li>
+									<li><a href="event.html">News</a></li>
+									<li><a href="event.html">Event</a></li>
+									<li><a href="event.html">Social Live</a></li>
 								</ul>
 							</li>
 							<li><a href="support.html">Support</a>
 								<ul>
-									<li><a href="javascript:void(0)">Special Party</a></li>
-									<li><a href="javascript:void(0)">Q&A</a></li>
+									<li><a href="support.html">Special Party</a></li>
+									<li><a href="support.html">Q&A</a></li>
 								</ul>
 							</li>
 						</ul>
@@ -73,11 +62,100 @@
 				</nav>
 			</div>
 		</div>
-	<!-- <div class="gnb-down"></div> -->
+	<div class="gnb-down"></div>
 	</header>
  <!-- //header -->
  <!-- container -->
-	<div id="container"></div>
+	<div id="container">
+		<div class="benefit-title">
+			<h2>통합 멤버십 안내</h2>
+			<p>포인트 통합 적립하고, 브랜드별 혜택도 모두 받아가세요!</p>
+		</div>
+		<div class="benefit benefit2">
+			<h3>그린멤버스 가입 &amp; 포인트 적립 방법</h3>
+			<ul>
+				<li>
+					<img src="images/main/benefit1_01.jpg" alt="가입">
+					<div>
+						<h4>가입</h4>
+						<p>태블릿에 전화번호, 이름, 생년월일, 성별 등록</p>
+					</div>
+				</li>
+				<li>
+					<img src="images/main/benefit1_02.jpg" alt="적립">
+					<div>
+						<h4>적립</h4>
+						<p>결제 시 전화번호 입력</p>
+					</div>
+				</li>
+			</ul>
+		</div>
+		<div class="benefit benefit3">
+			<h3>멤버십 혜택</h3>
+			<ul>
+				<li>
+					<img src="images/main/benefit2_01.jpg" alt="가입 축하 포인트 제공">
+					<div>
+						<h4>가입 축하 포인트 제공</h4>
+						<p>신규 가입 시</p>
+						<p>500 포인트 제공</p>
+					</div>
+				</li>
+				<li>
+					<span><img src="images/main/benefit2_02.jpg" alt="세븐데이 할인"></span>
+					<div>
+						<h4>세븐데이 할인</h4>
+						<p>매월 7일 /17일/27일</p>
+						<p>세븐데이 7% 할인</p>
+					</div>
+				</li>
+				<li>
+					<span><img src="images/main/benefit2_03.jpg" alt="포인트 적립"></span>
+					<div>
+						<h4>포인트 적립</h4>
+						<p>2% 적립 : 세븐스프링스, 세븐스프링스 블랙,<br>카페 세븐스프링스 </p>
+						<p>3% 적립 :  카페 파크 7, 1% 특별 추가 적립 중</p>
+					</div>
+				</li>
+			</ul>
+		</div>
+		<div class="benefit benefit3">
+			<h3>생일 혜택</h3>
+			<ul>
+				<li>
+					<img src="images/main/coupon_01.png" alt="세븐스프링스,세븐스프링스 블랙 쿠폰, 그린테이블 샐러드바 무료 쿠폰 2매+미니와인 1병 ">
+				</li>
+				<li>
+					<img src="images/main/coupon_02.png" alt="카페 세븐스프링스 1만원 할인권 1매">
+				</li>
+				<li>
+					<img src="images/main/coupon_03.png" alt="카페파크7 5천원 할인권 1매">
+				</li>
+			</ul>
+		</div>
+		<div class="benefit benefit2">
+			<h3>포인트 확인 방법</h3>
+			<ul>
+				<li>
+					<img src="images/main/benefit4_01.jpg" alt="카카오톡">
+					<div>
+						<h4>카카오톡</h4>
+						<p>1. 세븐스프링스와 플러스 친구 맺기</p>
+						<p>2. 결제 시 발송되는 메시지 확인</p>
+						<p>세븐스프링스와 카카오톡 플러스친구가 되시면<br>포인트 적립 내역과 다양한 소식을 받아보실 수 있습니다</p>
+					</div>
+				</li>
+				<li>
+					<img src="images/main/benefit4_02.jpg" alt="시럽">
+					<div>
+						<h4>시럽(Syrup wallet)</h4>
+						<p>1. [도도포인트]카드 발급</p>
+						<p>2. 누적 포인트 및 적립 내역 확인</p>
+					</div>
+				</li>
+			</ul>
+		</div>
+	</div>
  <!-- //container -->
  <!-- footer -->
 	<footer id="footer">

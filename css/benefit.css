@@ -1,0 +1,21 @@
+@charset "utf-8";
+.gnb-down{top: 87px;}
+#container{width: 1200px; margin: 0 auto;}
+.benefit-title{padding: 70px 0;text-align: center;}
+.benefit-title h2{font-size: 35px;line-height: 2.2em;font-weight: bold;}
+.benefit-title h2+p{font-size: 14px;line-height: 2.2em;}
+.benefit{border: 4px solid #f0f0f0;margin-bottom: 60px;padding-bottom: 45px;}
+.benefit ul{overflow: hidden;}
+.benefit li{float: left;}
+.benefit h3{font-size: 20px;line-height: 2.2em;text-align: center;padding: 30px 0; background: #f0f0f0;margin-bottom: 60px;}
+.benefit h4{margin-bottom: 10px;font-size: 14px;}
+.benefit2 ul {padding-left: 10%;}
+.benefit2 ul li{width: 45%;margin-right: 5%;border-right: 2px solid #ddd;}
+.benefit2 ul li:last-child{margin-right: 0;border: none;}
+.benefit2 ul li img,.benefit2 ul li div{float: left;}
+.benefit2 ul li div{padding-left: 20px;}
+.benefit3 ul li{width: 33.333%;}
+.benefit3 h4{padding-top: 20px;}
+.benefit3 ul li div{text-align: center;}
+.benefit3 ul li > span{display: block;height: 107px;padding-top: 27px;}
+.benefit3 ul li img{display: block;margin: 0 auto;}

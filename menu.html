@@ -8,22 +8,12 @@
 	<meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
 	<link href="https://fonts.googleapis.com/css?family=Nanum+Gothic|Roboto" rel="stylesheet">
-	<link rel="stylesheet" href="../css/jquery.bxslider.css">
 	<link rel="stylesheet" href="css/common.css">
 	<title>SEVEN SPRINGS</title>
-	<link rel="stylesheet" href="css/main.css">
-	<script src="../js/jquery-3.3.1.min.js"></script>
-	<script src="../js/jquery.bxslider.js"></script>
-	<script>
-	$(document).ready(function(){
-		$('.main-visual').bxSlider({
-			auto: true,
-			autoControls: true,
-			stopAutoOnClick: true,
-			pager: true,
-		});
-	});
-	</script>
+	<link rel="stylesheet" href="css/menu.css">
+	<script src="js/jquery-3.3.1.min.js"></script>
+	<script src="js/main.js"></script>
+	<script src="js/menu.js"></script>
  </head>
  <body>
  <div class="skipmenu"><a href="container">본문 바로가기</a></div>
@@ -37,35 +27,35 @@
 						<ul>
 							<li><a href="brand.html">Brand</a>
 								<ul>
-									<li><a href="javascript:void(0)">Brand Story</a></li>
-									<li><a href="javascript:void(0)">매장정보</a></li>
+									<li><a href="brand.html">Brand Story</a></li>
+									<li><a href="brand.html">매장정보</a></li>
 								</ul>
 							</li>
 							<li><a href="menu.html">Menu</a>
 								<ul>
-									<li><a href="javascript:void(0)">세븐스프링스</a></li>
-									<li><a href="javascript:void(0)">세븐스프링스 블랙</a></li>
-									<li><a href="javascript:void(0)">카페 세븐스프링스</a></li>
-									<li><a href="javascript:void(0)">카페 파크7</a></li>
+									<li><a href="menu.html#menuli-1">세븐스프링스</a></li>
+									<li><a href="menu.html#menuli-2">세븐스프링스 블랙</a></li>
+									<li><a href="menu.html#menuli-3">카페 세븐스프링스</a></li>
+									<li><a href="menu.html#menuli-4">카페 파크7</a></li>
 								</ul>
 							</li>
 							<li><a href="benefit.html">Benefit</a>
 								<ul>
-									<li><a href="javascript:void(0)">Membership 혜택</a></li>
-									<li><a href="javascript:void(0)">제휴 할인 & 상품권</a></li>
+									<li><a href="benefit.html">Membership 혜택</a></li>
+									<li><a href="benefit.html">제휴 할인 & 상품권</a></li>
 								</ul>
 							</li>
 							<li><a href="event.html">Event</a>
 								<ul>
-									<li><a href="javascript:void(0)">News</a></li>
-									<li><a href="javascript:void(0)">Event</a></li>
-									<li><a href="javascript:void(0)">Social Live</a></li>
+									<li><a href="event.html">News</a></li>
+									<li><a href="event.html">Event</a></li>
+									<li><a href="event.html">Social Live</a></li>
 								</ul>
 							</li>
 							<li><a href="support.html">Support</a>
 								<ul>
-									<li><a href="javascript:void(0)">Special Party</a></li>
-									<li><a href="javascript:void(0)">Q&A</a></li>
+									<li><a href="support.html">Special Party</a></li>
+									<li><a href="support.html">Q&A</a></li>
 								</ul>
 							</li>
 						</ul>
@@ -73,11 +63,306 @@
 				</nav>
 			</div>
 		</div>
-	<!-- <div class="gnb-down"></div> -->
+	<div class="gnb-down"></div>
 	</header>
  <!-- //header -->
  <!-- container -->
-	<div id="container"></div>
+
+		<div id="container">
+			<div class="sidenav-wrap">
+				<h2><span>BRAND</span></h2>
+				<ul>
+					<li><a href="#menuli-1">세븐스프링스</a></li>
+					<li><a href="#menuli-2">세븐스프링스 블랙</a></li>
+					<li><a href="#menuli-3">카페 세븐스프링스</a></li>
+					<li><a href="#menuli-4">카페 파크7</a></li>
+				</ul>
+			</div>
+			<div class="menu-li" id="menuli-1">
+				<h3><img src="images/main/seven_menu_title1.jpg" alt="세븐 스프링스"></h3>
+				<ul>
+					<li>
+						<img src="images/main/menu1-1.png" alt="상세이미지">
+						<div class="info">
+							<h4>DIY Salad</h4>
+							<p>양상추｜적양배추｜통로메인｜케일｜치커리</p>
+							<p>샐러리｜브로콜리｜컬리플라워｜믹스올리브</p>
+							<p>[드레싱] 발사믹｜흑임자｜요거트｜딸기</p>
+						</div>
+					</li>
+					<li>
+						<img src="images/main/menu1-2.png" alt="상세이미지">
+						<div class="info">
+							<h4>Mixed Salad</h4>
+							<p>시그니쳐 연어 샐러드｜시그니쳐 치킨 시저 샐러드</p>
+							<p>비트 카프레제 샐러드 | 문어 카르파치오 샐러드</p>
+							<p>망고시트러스 샐러드｜사과 월도프 샐러드</p>
+							<p>참깨 연두부 샐러드｜단호박 크림 샐러드</p>
+							<p>스트로베리 그린 샐러드｜스트로베리 바질 브루스케타</p>
+						</div>
+					</li>
+					<li>
+						<img src="images/main/menu1-3.png" alt="상세이미지">
+						<div class="info">
+							<h4>Pizza & Pasta</h4>
+							<p>크리미 머쉬룸 파스타｜비프 라구 파스타</p>
+							<p>하와이안 치킨 피자｜그레이프 피자</p>
+						</div>
+					</li>
+					<li>
+						<img src="images/main/menu1-4.png" alt="상세이미지">
+						<div class="info">
+							<h4>Main(Steak)</h4>
+							<p>[원주점] 안심스테이크｜등심스테이크｜오리지널 BBQ폭립</p>
+							<p>[창원점] 안심스테이크｜등심스테이크｜연어스테이크</p>
+						</div>
+					</li>
+					<li>
+						<img src="images/main/menu1-5.png" alt="상세이미지">
+						<div class="info">
+							<h4>Rice & Noodle</h4>
+							<p>곤드레나물 비빔밥｜불고기 볶음밥</p>
+							<p>얼큰 홍짬뽕｜나가사키 백짬뽕</p>
+						</div>
+					</li>
+					<li>
+						<img src="images/main/menu1-6.png" alt="상세이미지">
+						<div class="info">
+							<h4>Hot Food</h4>
+							<p>비프 부르기뇽｜칠리 갈릭 쉬림프</p>
+							<p>화이트 크림 치킨｜리코타치즈 프리타타</p>
+							<p>석화찜｜토마토 홍합찜｜바베큐 폭립</p>
+							<p>스윗포테이토｜DIY타코｜그릴드 베지</p>
+						</div>
+					</li>
+					<li>
+						<img src="images/main/menu1-7.png" alt="상세이미지">
+						<div class="info">
+							<h4>Dessert</h4>
+							<p>리스케이크｜블랙 포레스트 케이크</p>
+							<p>샹그리아｜망고 오렌지 주스｜사과 당근 주스</p>
+							<p>DIY요거트&와플｜계절과일｜아이스크림</p>
+						</div>
+					</li>
+					<li>
+						<img src="images/main/menu1-8.png" alt="상세이미지">
+						<div class="info">
+							<h4>Soup</h4>
+							<p>양송이스프｜닭야채죽</p>
+						</div>
+					</li>
+				</ul>
+			</div>	
+			<div class="menu-li" id="menuli-2">
+				<h3><img src="images/main/seven_menu_title2.jpg" alt="세븐 스프링스 블랙"></h3>
+				<ul>
+					<li>
+						<img src="images/main/menu2-1.png" alt="상세이미지">
+						<div class="info">
+							<h4>Live Barbecue</h4>
+							<p>새우구이｜바베큐 폭립</p>
+							<p>데리야끼치킨｜야채구이</p>
+						</div>
+					</li>
+					<li>
+						<img src="images/main/menu2-2.png" alt="상세이미지">
+						<div class="info">
+							<h4>Sushi & Roll</h4>
+							<p>연어｜간장새우｜양념붕장어｜한치｜새치아부리</p>
+							<p>에비크런치롤｜연어롤｜칠리치즈롤</p>
+						</div>
+					</li>
+					<li>
+						<img src="images/main/menu2-3.png" alt="상세이미지">
+						<div class="info">
+							<h4>Fried</h4>
+							<p>어니언링｜버팔로 감자튀김｜치킨 가라아게</p>
+						</div>
+					</li>
+					<li>
+						<img src="images/main/menu2-4.png" alt="상세이미지">
+						<div class="info">
+							<h4>Hot Food</h4>
+							<p>비프 부르기뇽｜칠리 갈릭 쉬림프</p>
+							<p>화이트 크림 치킨｜리코타치즈 프리타타</p>
+							<p>석화찜｜토마토 홍합찜｜DIY타코</p>
+						</div>
+					</li>
+					<li>
+						<img src="images/main/menu2-5.png" alt="상세이미지">
+						<div class="info">
+							<h4>Pizza & Pasta</h4>
+							<p>크리미 머쉬룸 파스타｜비프 라구 파스타</p>
+							<p>리코타바질페스토피자｜그레이프 피자</p>
+							<p>하와이안 치킨 피자</p>
+						</div>
+					<li>
+						<img src="images/main/menu2-6.png" alt="상세이미지">
+						<div class="info">
+							<h4>Rice & Noodle</h4>
+							<p>곤드레나물 비빔밥｜불고기 볶음밥</p>
+							<p>얼큰 홍짬뽕</p>
+						</div>
+					</li>
+					<li>
+						<img src="images/main/menu2-7.png" alt="상세이미지">
+						<div class="info">
+							<h4>Soup</h4>
+							<p>양송이스프｜닭야채죽</p>
+						</div>
+					</li>
+					<li>
+						<img src="images/main/menu2-8.png" alt="상세이미지">
+						<div class="info">
+							<h4>Mixed Salad</h4>
+							<p>시그니쳐 연어 샐러드｜시그니쳐 치킨 시저 샐러드</p>
+							<p>비트 카프레제 샐러드｜문어 카르파치오 샐러드</p>
+							<p>스트로베리 그린 샐러드｜바질 브루스케타</p>
+						</div>
+					</li>
+					<li>
+						<img src="images/main/menu2-9.png" alt="상세이미지">
+						<div class="info">
+							<h4>DIY Salad</h4>
+							<p>양상추｜적양배추｜통로메인｜케일｜치커리</p>
+							<p>샐러리｜브로콜리｜컬리플라워｜믹스올리브</p>
+							<p>[드레싱] 발사믹｜흑임자｜요거트｜딸기</p>
+						</div>
+					</li>
+					<li>
+						<img src="images/main/menu2-9.png" alt="상세이미지">
+						<div class="info">
+							<h4>Dessert</h4>
+							<p>리스케이크｜블랙 포레스트 케이크</p>
+							<p>샹그리아｜망고 오렌지 주스｜사과 당근 주스</p>
+							<p>계절과일｜아이스크림</p>
+						</div>
+					</li>
+				</ul>
+			</div>		
+			<div class="menu-li" id="menuli-3">
+				<h3><img src="images/main/seven_menu_title3.jpg" alt="카페 세븐 스프링스"></h3>
+				<ul>
+					<li>
+						<img src="images/main/menu3-1.png" alt="상세이미지">
+						<div class="info">
+							<h4>Salad</h4>
+							<p>연어&아보카도 샐러드</p>
+							<p>시그니처 시저 샐러드</p>
+							<p>콥샐러드</p>
+						</div>
+					</li>
+					<li>
+						<img src="images/main/menu3-2.png" alt="상세이미지">
+						<div class="info">
+							<h4>Pasta</h4>
+							<p>멜팅 스테이크 파스타</p>
+							<p>빠네 베이컨 크림 파스타</p>
+							<p>치킨 로제 파스타</p>
+							<p>갈릭 토마토 파스타</p>
+							<p>슈림프 알리오 올리오</p>
+						</div>
+					</li>
+					<li>
+						<img src="images/main/menu3-3.png" alt="상세이미지">
+						<div class="info">
+							<h4>Pizza</h4>
+							<p>바베큐 치킨 피자</p>
+							<p>모짜 마르게리타 피자</p>
+							<p>고르곤졸라 피자</p>
+						</div>
+					</li>
+					<li>
+						<img src="images/main/menu3-4.png" alt="상세이미지">
+						<div class="info">
+							<h4>Rice</h4>
+							<p>블랙페퍼 스테이크 라이스</p>
+							<p>치즈 듬뿍 쉬림프 그라탕</p>
+							<p>메이플 데리야키 치킨 라이스</p>
+						</div>
+					</li>
+					<li>
+						<img src="images/main/menu3-5.png" alt="상세이미지">
+						<div class="info">
+							<h4>Beverage</h4>
+							<p>시즌음료 (자색 고구마 라떼｜</p>
+							<p>허니 오렌지 모카｜꿀모과차)</p>
+							<p>에이드 (자몽, 오렌지, 레몬)</p>
+							<p>착즙주스 (언제나그린)</p>
+							<p>생과일 주스 (오렌지, 파인애플바나나)</p>
+						</div>
+					</li>
+					<li>
+						<img src="images/main/menu3-6.png" alt="상세이미지">
+						<div class="info">
+							<h4>Coffee</h4>
+							<p>아메리카노｜카페라떼</p>
+						</div>
+					</li>
+				</ul>
+			</div>		
+			<div class="menu-li" id="menuli-4">
+				<h3><img src="images/main/seven_menu_title4.jpg" alt="카페 파크 7"></h3>
+				<ul>
+					<li>
+						<img src="images/main/menu4-1.png" alt="상세이미지">
+						<div class="info">
+							<h4>Beverage</h4>
+							<p>[드레싱] 발사믹｜흑임자｜요거트｜딸기</p>
+							<p>시즌음료 (자색 고구마 라떼｜</p>
+							<p>허니 오렌지 모카｜꿀모과차)</p>
+							<p>따뜻한 자몽티｜착한 자몽에이드｜핫초콜릿</p>
+							<p>요거트 딸기주스｜착즙주스 (그린, 자몽, 오렌지)</p>
+							<p>생과일 주스 (파인애플바나나)</p>
+						</div>
+					</li>
+					<li>
+						<img src="images/main/menu4-2.png" alt="상세이미지">
+						<div class="info">
+							<h4>Cake</h4>
+							<p>스트로베리 그린 샐러드｜스트로베리 바질 브루스케타</p>
+							<p>쇼콜라 봉봉 케이크</p>
+						</div>
+					</li>
+					<li>
+						<img src="images/main/menu4-3.png" alt="상세이미지">
+						<div class="info">
+							<h4>Bakery</h4>
+							<p>크로와상 (플레인, 바닐라, 말차, 커피초코) </p>
+							<p>트위스트 플레인/초코｜뺑오쇼콜라</p>
+							<p>스윗애플파이｜세이보리 스콘</p>
+							<p>다크초코렛 브라우니｜정통 티라미수</p>
+							<p>레이어치즈케이크｜블루베리머핀</p>
+						</div>
+					</li>
+					<li>
+						<img src="images/main/menu4-4.png" alt="상세이미지">
+						<div class="info">
+							<h4>Sandwich</h4>
+							<p>튜나 홀그레인｜크랩미트 통밀｜그릴드 햄치즈</p>
+							<p>크랜베리 치킨 크로와상</p>
+						</div>
+					</li>
+					<li>
+						<img src="images/main/menu4-5.png" alt="상세이미지">
+						<div class="info">
+							<h4>Salad</h4>
+							<p>콥샐러드｜시저샐러드｜연어샐러드</p>
+						</div>
+					</li>
+					<li>
+						<img src="images/main/menu4-6.png" alt="상세이미지">
+						<div class="info">
+							<h4>Bakery Buffet</h4>
+							<p>곡물브레드｜통밀식빵｜시나몬식빵｜옥수수식빵</p>
+							<p>베이크드빈스｜해쉬브라운｜스크램블</p>
+							<p>샐러드｜오늘의 스프｜슬라이스치즈｜요거트</p>
+						</div>
+					</li>
+				</ul>
+			</div>	
+		</div>
+
  <!-- //container -->
  <!-- footer -->
 	<footer id="footer">
