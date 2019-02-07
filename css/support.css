@@ -1,0 +1,21 @@
+@charset "utf-8";
+.gnb-down{top: 87px;}
+.wedding-title{height: 510px;padding: 190px 0;color: #fff;text-shadow: 1px 2px 1px #444;text-align: center;background: url(../images/main/wedding-img.png) center top fixed no-repeat;}
+.wedding-t-inner{width: 500px;border: 2px outset #aaa;background: rgba(100,100,100,.4);margin: 0 auto;}
+.wedding-t-inner h2{font-size: 35px;line-height: 1.8em;font-weight: bold;padding-top: 30px;}
+.wedding-t-inner h2+p{font-size: 14px;line-height: 2.2em;padding-bottom: 50px;}
+.wedding-t-inner p:last-child{padding-bottom: 40px;}
+.c{width: 1100px; margin: 0 auto;overflow: hidden;padding: 40px 0;}
+.c1-c{float: left; width: 25%;text-align: center;padding: 10px 0;border-right: 2px solid #dedede;}
+.c1-4{margin-right: 0;border: none;}
+.c1-c img{padding-bottom: 20px;}
+
+.c2 .store-title{text-align: center;}
+.c2 .store-title h3{font-size: 33px;line-height: 1.8em;font-weight: bold;border: 1px solid #bbb;background: #085320; color: #fff;margin-bottom: 12px;}
+.c2 .store-title p{font-size: 14px;line-height: 2.2em;margin-bottom: 70px;color:#5e5b0a;}
+.c2 .store-title+img{float: left;padding-bottom: 60px;}
+.c2 .store-info{float: left;padding-top: 100px;padding-left: 80px;}
+.c2 .store-info p{margin-bottom: 30px;font-size: 14px;}
+.c2 .store-info p:first-child{border-bottom: 2px solid #085320;}
+.c2 .store-info img{margin-bottom: 5px;}
+

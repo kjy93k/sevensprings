@@ -1,14 +1,14 @@
 @charset "utf-8";
 .gnb-down{top: 87px;}
 #container{background: url(../images/main/seven_menu3_bg.jpg);}
-.sidenav-wrap{left: -5%;transition: .3s;}
+.sidenav-wrap{left: -4%;transition: .3s;}
 .menu-li {padding-top: 70px;}
-#menuli-4 {margin-bottom: 70px;}
+#menuli-4 {padding-bottom: 70px;}
 .menu-li h3{}
 .menu-li h3 img{display: block;margin:0 auto 70px;}
 .menu-li ul{width: 1200px;margin: 0 auto;overflow: hidden;}
-.menu-li ul li{width: 30%;float: left;height: 380px;}
+.menu-li ul li{width: 30%;float: left;height: 350px; margin-bottom: 50px; border: 2px solid #ddd; overflow: hidden; border-radius: 2%; }
 .menu-li ul li:nth-child(3n-1){margin-left: 5%; margin-right: 5%;}
-.menu-li ul li img{margin-bottom: 20px;}
-.menu-li ul li .info h4{font-size: 15px;margin-bottom: 2px;}
+.menu-li ul li .info{padding: 30px;}
+.menu-li ul li .info h4{font-size: 15px;margin-bottom: 7px;font-weight: bold;}
 .menu-li ul li .info p{padding-top: 7px;}

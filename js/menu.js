@@ -18,7 +18,7 @@ $(document).ready(function(){
 		$(this).css({'left':'2%'})
 	});
 	$('.sidenav-wrap').mouseleave(function(){
-		$(this).css({'left':'-5%'});
+		$(this).css({'left':'-4%'});
 		$('.sidenav-wrap h2 span').removeClass('on');
 		$('.sidenav-wrap ul').slideUp();
 		$btnNum=0;

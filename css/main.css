@@ -14,7 +14,7 @@
 /* .content-1-wrap{background-color: #f5f2ec;} */
 .content{max-width: 1100px;margin: 0 auto;padding: 20px;}
 .content-txt{text-align: center;}
-.content h2{font-size: 40px;font-weight: bold;font-family: 'time new roman';margin-bottom: 45px;}
+.content h2{font-size: 40px;font-weight: bold;font-family: 'time new roman';margin-bottom: 45px;position: relative;}
 .content h2:after{content: '';display: block;width: 23%;height: 3px;background-color: lightgray;position: absolute;left: 50%;transform:translateX(-50%);margin-top: 15px;}
 .content h2+p{margin-bottom: 70px;font-size: 15px;color: #666;}
 .content ul{width: 100%;}
