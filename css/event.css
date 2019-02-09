@@ -1,7 +1,7 @@
 @charset "utf-8";
 .gnb-down{top: 87px;}
 #container{height: 2160px;}
-.event-title{text-align: center;background: url(../images/main/gift-box2.jpg) center top fixed no-repeat;height: 512px;}
+.event-title{text-align: center;background: url(../images/main/gift-box2.jpg) center top fixed no-repeat;background-size: 100%; height: 512px;}
 .event-title h2{font-size: 35px;line-height: 1.8em;font-weight: bold;padding-top: 200px;}
 .event-title p{font-size: 14px;line-height: 2.2em;padding-bottom: 130px;}
 .event-wrap{position: relative;width: 1100px;margin: 0 auto;}

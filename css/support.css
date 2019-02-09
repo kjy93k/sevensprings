@@ -1,6 +1,6 @@
 @charset "utf-8";
 .gnb-down{top: 87px;}
-.wedding-title{height: 510px;padding: 140px 0;color: #fff;text-shadow: 1px 2px 1px #444;text-align: center;background: url(../images/main/wedding-img4.jpg) center top fixed no-repeat;}
+.wedding-title{height: 510px;padding: 140px 0;color: #fff;text-shadow: 1px 2px 1px #444;text-align: center;background: url(../images/main/wedding-img4.jpg) center top fixed no-repeat;background-size: 100%;}
 .wedding-t-inner{width: 500px;border: 2px outset #aaa;background: rgba(100,100,100,.4);margin: 0 auto;}
 .wedding-t-inner h2{font-size: 35px;line-height: 1.8em;font-weight: bold;padding-top: 30px;}
 .wedding-t-inner h2+p{font-size: 14px;line-height: 2.2em;padding-bottom: 50px;}

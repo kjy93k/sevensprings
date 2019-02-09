@@ -1,6 +1,6 @@
 @charset "utf-8";
 .gnb-down{top: 87px;}
-.brand-wrap{width: 100%;height: 450px;background:url(../images/main/seven_menu1.jpg) center top fixed no-repeat;}
+.brand-wrap{width: 100%;height: 450px;background:url(../images/main/seven_menu1.jpg) center top fixed no-repeat;background-size: 100%;}
 .brand-wrap h2{width: 100%;height: 100%;text-align: center;font-size: 35px;color: #fff;line-height: 450px;background: rgba(0,0,0,.3);text-shadow: 1px 1px 1px #555;}
 .container-wrap{background: url(../images/main/seven_menu1_bg.jpg) center;padding-top: 160px;padding-bottom: 160px;}
 #container{width: 1265px;margin: 0 auto;}

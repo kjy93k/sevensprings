@@ -1,6 +1,6 @@
 @charset "utf-8";
 .gnb-down{top: 87px;}
-#container{background: url(../images/main/seven_menu3_bg.jpg);}
+#container{background: url(../images/main/seven_menu3_bg.jpg);background-size: 100%;}
 .sidenav-wrap{left: -4%;transition: .3s;}
 .menu-li {padding-top: 70px;}
 #menuli-4 {padding-bottom: 70px;}
